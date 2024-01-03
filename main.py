@@ -71,7 +71,7 @@ while(True):
         print (len(buttons) , " buttons ")
         # button_bar = driver.find_element_by_xpath('/html/body/main/div/div[1]/div/div[5]/div[1]/nav/ul')
 
-        button_link = driver.find_element_by_xpath('/html/body/main/div/div[1]/div/div[5]/div[1]/nav/ul/li['+str(len(buttons)-1)+']/a')
+        button_link = driver.find_element_by_xpath('/html/body/main/div/div[1]/div/div[5]/div[1]/nav/ul/li['+str(len(buttons))+']/a')
         # button_link = driver.find_element_by_class_name('css-akkh0a e8ju0x50')
         driver.execute_script("arguments[0].scrollIntoView(true);", button_link)
         time.sleep(9)
